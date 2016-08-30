@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html ng-app="Portfolio">
+<head>
+	<!-- dependencias ~ angular, routes etc -->
+	<script type="text/javascript" src="node_modules/angular/angular.min.js"></script>
+	<script type="text/javascript" src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+
+	<!-- Inicialização e Rotas -->
+	<script type="text/javascript" src="js/app.js"></script>
+	<script type="text/javascript" src="js/app.router.js"></script>
+
+	<!-- Controllers -->
+
+	<!-- Estilo -->
+	<link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap.css">
+	<title>{{site.nome}}</title>
+</head>
+<body>
+	<div  ng-include="'views/menu/menu.html'"></div>
+		<div ui-view=""></div>
+
+	<div ng-include="'views/footer/footer.html'"></div>
+
+</body>
+</html>
